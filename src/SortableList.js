@@ -111,7 +111,7 @@ export default class SortableList extends Component {
     this._onUpdateLayouts();
   }
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const {data, order} = this.state;
     let {data: nextData, order: nextOrder} = nextProps;
 
